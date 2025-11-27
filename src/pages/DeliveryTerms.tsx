@@ -147,8 +147,8 @@ const DeliveryTerms = () => {
         </div>
       </header>
 
-      <div className="flex flex-1 overflow-hidden">
-        <aside className="w-64 bg-[#f5f5f5] border-r border-gray-300 p-4 flex flex-col">
+      <div className="flex flex-1 min-h-0">
+        <aside className="w-64 bg-[#f5f5f5] border-r border-gray-300 p-4">
         <h2 className="text-base font-semibold text-gray-800 mb-4">
           Настройки администратора
         </h2>
@@ -189,8 +189,8 @@ const DeliveryTerms = () => {
         </nav>
       </aside>
 
-        <main className="flex-1 overflow-y-auto">
-        <div className="max-w-5xl mx-auto p-8">
+        <main className="flex-1 flex flex-col">
+        <div className="flex-1 p-8 max-w-5xl mx-auto w-full">
           <h1 className="text-2xl font-semibold text-gray-800 mb-6">
             Условия поставки
           </h1>
