@@ -50,10 +50,6 @@ const DeliveryTerms = () => {
               alt="Роснекс" 
               className="h-8"
             />
-            <div className="flex items-center gap-2 text-xs">
-              <Icon name="MapPin" size={14} />
-              <span>МОСКВА/РЕГИОН ЮФО</span>
-            </div>
             <button className="flex items-center gap-2 px-3 py-1.5 border border-gray-300 rounded hover:bg-gray-50">
               <Icon name="Briefcase" size={16} />
               <span className="text-xs font-medium">ООО NetLab</span>
@@ -110,12 +106,30 @@ const DeliveryTerms = () => {
         </div>
 
         <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
-          <div className="flex items-center gap-2 text-xs text-gray-600">
-            <button className="hover:text-gray-900">Главная</button>
-            <Icon name="ChevronRight" size={12} />
-            <button className="hover:text-gray-900">Настройки администратора</button>
-            <Icon name="ChevronRight" size={12} />
-            <span className="text-gray-900 font-medium">Условия поставки</span>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-xs text-gray-600">
+              <button className="hover:text-gray-900">Главная</button>
+              <Icon name="ChevronRight" size={12} />
+              <button className="hover:text-gray-900">Настройки администратора</button>
+              <Icon name="ChevronRight" size={12} />
+              <span className="text-gray-900 font-medium">Условия поставки</span>
+            </div>
+            <div className="flex items-center gap-4 text-xs">
+              <div className="flex items-center gap-2">
+                <Icon name="MapPin" size={14} className="text-gray-600" />
+                <span className="text-gray-700">МОСКВА/РЕГИОН ЮФО</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-700">
+                <div className="flex items-center gap-1">
+                  <span className="font-medium">$</span>
+                  <span>96.50 ₽</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="font-medium">€</span>
+                  <span>104.30 ₽</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
