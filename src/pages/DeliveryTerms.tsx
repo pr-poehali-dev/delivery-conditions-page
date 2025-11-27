@@ -64,18 +64,20 @@ const DeliveryTerms = () => {
               <input
                 type="text"
                 placeholder="Поиск по артикулу, названию и др."
-                className="w-full px-4 py-1.5 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400"
+                className="w-full px-4 py-1.5 pr-20 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400"
               />
-              <button className="absolute right-1 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-100 rounded">
-                <Icon name="Search" size={16} />
-              </button>
+              <div className="absolute right-1 top-1/2 -translate-y-1/2 flex gap-1">
+                <button className="p-1 hover:bg-gray-100 rounded">
+                  <Icon name="Search" size={16} />
+                </button>
+                <button className="p-1 hover:bg-gray-100 rounded">
+                  <Icon name="X" size={16} />
+                </button>
+              </div>
             </div>
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="p-1.5 hover:bg-gray-100 rounded">
-              <Icon name="X" size={16} />
-            </button>
             <div className="flex items-center gap-2">
               <button className="relative p-1.5 hover:bg-gray-100 rounded">
                 <Icon name="ShoppingCart" size={18} />
