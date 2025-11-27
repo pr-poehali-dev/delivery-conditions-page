@@ -54,8 +54,9 @@ const DeliveryTerms = () => {
               <Icon name="MapPin" size={14} />
               <span>МОСКВА/РЕГИОН ЮФО</span>
             </div>
-            <button className="p-1.5 border border-gray-300 rounded hover:bg-gray-50">
-              <Icon name="User" size={16} />
+            <button className="flex items-center gap-2 px-3 py-1.5 border border-gray-300 rounded hover:bg-gray-50">
+              <Icon name="Briefcase" size={16} />
+              <span className="text-xs font-medium">ООО NetLab</span>
             </button>
           </div>
 
