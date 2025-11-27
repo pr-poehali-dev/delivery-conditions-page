@@ -83,7 +83,10 @@ const DeliveryTerms = () => {
                   234
                 </span>
               </button>
-              <span className="text-sm font-medium">$ 53.8 ₽</span>
+              <div className="flex flex-col items-start">
+                <span className="text-[10px] text-gray-500 leading-none">Основная корзина</span>
+                <span className="text-sm font-medium">$ 53.8 ₽</span>
+              </div>
             </div>
             <button className="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 rounded">
               <Icon name="CreditCard" size={16} />
