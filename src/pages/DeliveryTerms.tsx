@@ -38,8 +38,91 @@ const DeliveryTerms = () => {
   };
 
   return (
-    <div className="flex h-screen bg-white">
-      <aside className="w-64 bg-[#f5f5f5] border-r border-gray-300 p-4">
+    <div className="flex flex-col h-screen bg-white">
+      <header className="border-b border-gray-300">
+        <div className="bg-white px-4 py-2 flex items-center justify-between">
+          <div className="flex items-center gap-6">
+            <button className="p-2 hover:bg-gray-100 rounded">
+              <Icon name="Menu" size={20} />
+            </button>
+            <img 
+              src="https://cdn.poehali.dev/files/a59d8d56-ac8e-47aa-bfcd-68daceb002ff.png" 
+              alt="Роснекс" 
+              className="h-8"
+            />
+            <div className="flex items-center gap-2 text-xs">
+              <Icon name="MapPin" size={14} />
+              <span>МОСКВА/РЕГИОН ЮФО</span>
+            </div>
+            <button className="p-1.5 border border-gray-300 rounded hover:bg-gray-50">
+              <Icon name="User" size={16} />
+            </button>
+          </div>
+
+          <div className="flex-1 max-w-md mx-8">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Поиск по артикулу, названию и др."
+                className="w-full px-4 py-1.5 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400"
+              />
+              <button className="absolute right-1 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-100 rounded">
+                <Icon name="Search" size={16} />
+              </button>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <button className="p-1.5 hover:bg-gray-100 rounded">
+              <Icon name="X" size={16} />
+            </button>
+            <div className="flex items-center gap-2">
+              <button className="relative p-1.5 hover:bg-gray-100 rounded">
+                <Icon name="ShoppingCart" size={18} />
+                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center">
+                  234
+                </span>
+              </button>
+              <span className="text-sm font-medium">$ 53.8 ₽</span>
+            </div>
+            <button className="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 rounded">
+              <Icon name="CreditCard" size={16} />
+              <span className="text-xs">ЗАКАЗЫ</span>
+            </button>
+            <div className="flex gap-2">
+              <button className="p-1.5 rounded-full bg-green-500 hover:bg-green-600">
+                <Icon name="Phone" size={14} className="text-white" />
+              </button>
+              <button className="p-1.5 rounded-full bg-blue-500 hover:bg-blue-600">
+                <Icon name="MessageCircle" size={14} className="text-white" />
+              </button>
+              <button className="p-1.5 rounded-full bg-purple-500 hover:bg-purple-600">
+                <Icon name="AtSign" size={14} className="text-white" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-[#2c2c2c] px-4 py-2">
+          <nav className="flex items-center justify-between text-white text-xs font-medium">
+            <div className="flex gap-6">
+              <button className="hover:text-gray-300">БРЕНДЫ / АРТИКУЛЫ</button>
+              <button className="hover:text-gray-300">ТОВАРЫ</button>
+              <button className="hover:text-gray-300">ПОСТАВЩИКИ</button>
+              <button className="hover:text-gray-300 flex items-center gap-1">
+                <Icon name="ShoppingCart" size={12} />
+              </button>
+            </div>
+            <div className="flex gap-6">
+              <button className="hover:text-gray-300">ЦЕНЫ</button>
+              <button className="hover:text-gray-300">СТРАНА</button>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div className="flex flex-1 overflow-hidden">
+        <aside className="w-64 bg-[#f5f5f5] border-r border-gray-300 p-4 overflow-y-auto">
         <h2 className="text-lg font-semibold text-gray-800 mb-6">
           Настройки администратора
         </h2>
@@ -80,7 +163,7 @@ const DeliveryTerms = () => {
         </nav>
       </aside>
 
-      <main className="flex-1 overflow-y-auto">
+        <main className="flex-1 overflow-y-auto">
         <div className="max-w-5xl mx-auto p-8">
           <h1 className="text-2xl font-semibold text-gray-800 mb-6">
             Условия поставки
@@ -143,7 +226,8 @@ const DeliveryTerms = () => {
             ))}
           </div>
         </div>
-      </main>
+        </main>
+      </div>
     </div>
   );
 };
