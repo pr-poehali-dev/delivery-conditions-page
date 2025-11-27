@@ -46,7 +46,7 @@ const DeliveryTerms = () => {
               <Icon name="Menu" size={20} />
             </button>
             <img 
-              src="https://cdn.poehali.dev/files/a59d8d56-ac8e-47aa-bfcd-68daceb002ff.png" 
+              src="https://cdn.poehali.dev/files/709b3866-8c77-475a-8985-4be542f1c327.png" 
               alt="Роснекс" 
               className="h-8"
             />
