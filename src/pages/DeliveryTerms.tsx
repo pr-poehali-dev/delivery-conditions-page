@@ -104,19 +104,15 @@ const DeliveryTerms = () => {
         </div>
 
         <div className="bg-[#2c2c2c] px-4 py-2">
-          <nav className="flex items-center justify-between text-white text-xs font-medium">
-            <div className="flex gap-6">
-              <button className="hover:text-gray-300">БРЕНДЫ / АРТИКУЛЫ</button>
-              <button className="hover:text-gray-300">ТОВАРЫ</button>
-              <button className="hover:text-gray-300">ПОСТАВЩИКИ</button>
-              <button className="hover:text-gray-300 flex items-center gap-1">
-                <Icon name="ShoppingCart" size={12} />
-              </button>
-            </div>
-            <div className="flex gap-6">
-              <button className="hover:text-gray-300">ЦЕНЫ</button>
-              <button className="hover:text-gray-300">СТРАНА</button>
-            </div>
+          <nav className="flex items-center justify-center gap-6 text-white text-xs font-medium">
+            <button className="hover:text-gray-300">БРЕНДЫ / АРТИКУЛЫ</button>
+            <button className="hover:text-gray-300">ТОВАРЫ</button>
+            <button className="hover:text-gray-300">ПОСТАВЩИКИ</button>
+            <button className="hover:text-gray-300 flex items-center gap-1">
+              <Icon name="ShoppingCart" size={12} />
+            </button>
+            <button className="hover:text-gray-300">ЦЕНЫ</button>
+            <button className="hover:text-gray-300">СТРАНА</button>
           </nav>
         </div>
       </header>
