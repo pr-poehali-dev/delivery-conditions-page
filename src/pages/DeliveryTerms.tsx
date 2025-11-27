@@ -254,6 +254,76 @@ const DeliveryTerms = () => {
         </div>
         </main>
       </div>
+
+      <footer className="bg-[#2c2c2c] text-white border-t border-gray-700">
+        <div className="px-8 py-8">
+          <div className="grid grid-cols-4 gap-8 mb-6">
+            <div>
+              <h3 className="text-sm font-semibold mb-4 text-gray-300">О сервисе</h3>
+              <ul className="space-y-2 text-xs">
+                <li><button className="hover:text-gray-300">О проекте</button></li>
+                <li><button className="hover:text-gray-300">Преимущества</button></li>
+                <li><button className="hover:text-gray-300">Тарифы</button></li>
+                <li><button className="hover:text-gray-300">FAQ</button></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-semibold mb-4 text-gray-300">Документы</h3>
+              <ul className="space-y-2 text-xs">
+                <li><button className="hover:text-gray-300">Политика конфиденциальности</button></li>
+                <li><button className="hover:text-gray-300">Пользовательское соглашение</button></li>
+                <li><button className="hover:text-gray-300">Реквизиты</button></li>
+                <li><button className="hover:text-gray-300">Документация</button></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-semibold mb-4 text-gray-300">Контакты</h3>
+              <ul className="space-y-2 text-xs">
+                <li><button className="hover:text-gray-300">Обратная связь</button></li>
+                <li>
+                  <a href="tel:+78005550053" className="hover:text-gray-300 flex items-center gap-2">
+                    <Icon name="Phone" size={12} />
+                    +7 (800) 555-00-53
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-semibold mb-4 text-gray-300">Курсы валют</h3>
+              <div className="space-y-2 text-xs mb-4">
+                <div className="flex items-center gap-2">
+                  <span className="font-medium">$</span>
+                  <span>104,24 ₽</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="font-medium">€</span>
+                  <span>110,20 ₽</span>
+                </div>
+              </div>
+              <div className="flex gap-2">
+                <a href="#" className="p-2 bg-gray-700 hover:bg-gray-600 rounded transition-colors">
+                  <Icon name="Send" size={14} />
+                </a>
+                <a href="#" className="p-2 bg-gray-700 hover:bg-gray-600 rounded transition-colors">
+                  <Icon name="MessageCircle" size={14} />
+                </a>
+                <a href="#" className="p-2 bg-gray-700 hover:bg-gray-600 rounded transition-colors">
+                  <Icon name="Mail" size={14} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-700 pt-4">
+            <p className="text-xs text-gray-400 text-center">
+              РОСНЕКС © 2025
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
