@@ -148,11 +148,11 @@ const DeliveryTerms = () => {
       </header>
 
       <div className="flex flex-1 overflow-hidden">
-        <aside className="w-64 bg-[#f5f5f5] border-r border-gray-300 p-4 overflow-y-auto">
-        <h2 className="text-lg font-semibold text-gray-800 mb-6">
+        <aside className="w-64 bg-[#f5f5f5] border-r border-gray-300 p-4 flex flex-col">
+        <h2 className="text-base font-semibold text-gray-800 mb-4">
           Настройки администратора
         </h2>
-        <nav className="space-y-1">
+        <nav className="space-y-0.5">
           {[
             'Мои компании',
             'Пользователи',
@@ -164,12 +164,12 @@ const DeliveryTerms = () => {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded cursor-pointer transition-colors"
+              className="px-3 py-1.5 text-xs text-gray-700 hover:bg-gray-200 rounded cursor-pointer transition-colors"
             >
               {item}
             </div>
           ))}
-          <div className="px-3 py-2 text-sm text-gray-900 bg-gray-300 rounded font-medium">
+          <div className="px-3 py-1.5 text-xs text-gray-900 bg-gray-300 rounded font-medium">
             Мои поставщики
           </div>
           {[
@@ -181,7 +181,7 @@ const DeliveryTerms = () => {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded cursor-pointer transition-colors"
+              className="px-3 py-1.5 text-xs text-gray-700 hover:bg-gray-200 rounded cursor-pointer transition-colors"
             >
               {item}
             </div>
