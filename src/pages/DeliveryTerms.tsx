@@ -106,6 +106,16 @@ const DeliveryTerms = () => {
           </div>
         </div>
 
+        <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
+          <div className="flex items-center gap-2 text-xs text-gray-600">
+            <button className="hover:text-gray-900">Главная</button>
+            <Icon name="ChevronRight" size={12} />
+            <button className="hover:text-gray-900">Настройки администратора</button>
+            <Icon name="ChevronRight" size={12} />
+            <span className="text-gray-900 font-medium">Условия поставки</span>
+          </div>
+        </div>
+
         <div className="bg-[#2c2c2c] px-4 py-2">
           <nav className="flex items-center justify-center gap-6 text-white text-xs font-medium">
             <button className="hover:text-gray-300">БРЕНДЫ / АРТИКУЛЫ</button>
@@ -117,16 +127,6 @@ const DeliveryTerms = () => {
             <button className="hover:text-gray-300">ЦЕНЫ</button>
             <button className="hover:text-gray-300">СТРАНА</button>
           </nav>
-        </div>
-
-        <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
-          <div className="flex items-center gap-2 text-xs text-gray-600">
-            <button className="hover:text-gray-900">Главная</button>
-            <Icon name="ChevronRight" size={12} />
-            <button className="hover:text-gray-900">Настройки администратора</button>
-            <Icon name="ChevronRight" size={12} />
-            <span className="text-gray-900 font-medium">Условия поставки</span>
-          </div>
         </div>
       </header>
 
